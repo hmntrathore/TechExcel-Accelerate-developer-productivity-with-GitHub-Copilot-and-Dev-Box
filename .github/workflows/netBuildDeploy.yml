@@ -93,16 +93,7 @@ jobs:
           app-name: ${{ env.your_prefix }}-dev
           images:  ${{ env.registryName }}/techexcel/dotnetcoreapp:${{github.run_number}}
 
-  manual-approval-test:
-    runs-on: ubuntu-latest
-    needs: deploy-to-dev
-    steps:
-      - name: 'Manual Approval'
-        uses: chrnorm/deployment-approvals-action@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          APPROVERS: 'hmntrathore' # Replace with actual GitHub usernames of approvers
-
+ 
   deploy-to-test:
   
     runs-on: ubuntu-latest
