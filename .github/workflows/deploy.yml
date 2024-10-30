@@ -1,10 +1,16 @@
 name: Azure Bicep
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      targetEnv:
+        description: 'Target Environment'
+        required: true
+        default: 'dev'
 
 env:
-  targetEnv: dev
+  targetEnv: ${{ github.event.inputs.targetEnv }}
+
 
 jobs:
   build-and-deploy:
