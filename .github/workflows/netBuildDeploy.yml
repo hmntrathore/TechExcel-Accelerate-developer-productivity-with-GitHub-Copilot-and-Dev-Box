@@ -1,7 +1,7 @@
 name: NET CI
 
 env:
-  registryName: hmntdemooct.azurecr.io
+  registryName: la4mxg2bkqeqmmpnpreg.azurecr.io
   repositoryName: techexcel/dotnetcoreapp
   dockerFolderPath: ./src/Application/src/RazorPagesTestSample
   tag: ${{github.run_number}}
