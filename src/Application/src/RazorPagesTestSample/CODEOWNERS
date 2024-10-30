@@ -1,0 +1,16 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners.
+
+# Owners for everything in the repo
+*      @hmntrathore @your-team
+
+# Owners for specific directories
+/docs/ @hmntrathore
+/src/   @hmntrathore
+
+# Owners for specific files
+/README.md  @hmntrathore
+
+# Owners for file types
+*.js    @hmntrathore
+*.html  @hmntrathore
